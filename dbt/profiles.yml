@@ -1,11 +1,12 @@
-name: # <- имя проекта (dbt init name)
+de1:
   target: dev
   outputs:
     dev:
       type: clickhouse
-      server: clickhouse 
+      driver: http
+      host: clickhouse
       port: 8123
       user: default
       password: ""
-      database: default
       schema: default
+      secure: false

@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Airflow logs (generated at runtime)
+logs/
+
+# dbt artifacts
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+dbt/.user.yml
+
+# Spark / Hadoop JAR dependencies (downloaded manually per README, too large for git)
+spark/jars/*.jar
+
+# Jupyter
+notebooks/.ipynb_checkpoints/
+
+# Env files
+.env
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
