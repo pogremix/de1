@@ -214,6 +214,7 @@ services:
       - AIRFLOW__CORE__LOAD_EXAMPLES=False
       - AIRFLOW__CORE__AUTH_MANAGER=airflow.providers.fab.auth_manager.fab_auth_manager.FabAuthManager
       - AIRFLOW__API_AUTH__JWT_SECRET=please_change_me_jwt_secret
+      - AIRFLOW__API__EXPOSE_CONFIG=True
       - AIRFLOW_CONN_S3_CONN=s3://minio:minio123@minio:9000/
     volumes:
       - ./dags:/opt/airflow/dags
