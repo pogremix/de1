@@ -12,8 +12,8 @@ dbt/dbt_packages/
 dbt/logs/
 dbt/.user.yml
 
-# Spark / Hadoop JAR dependencies (downloaded manually per README, too large for git)
-spark/jars/*.jar
+# AWS SDK bundle exceeds GitHub's 100MB file limit - downloaded manually per README
+spark/jars/aws-java-sdk-bundle-*.jar
 
 # Jupyter
 notebooks/.ipynb_checkpoints/
